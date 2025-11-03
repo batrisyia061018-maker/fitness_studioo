@@ -1,0 +1,100 @@
+:root {
+  --main: #2E5957;    /* Teal green (primary) */
+  --bg: #E9F0F0;      /* Soft mint gray background */
+  --accent: #ffffff;  /* White accent for buttons/cards */
+}
+html, body{
+	height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+flex: 1;
+}
+
+/* Navbar + Footer */
+.bg-primary {
+  background-color: var(--main) !important;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+.navbar-dark .nav-link {
+  color: #fff !important;
+}
+.navbar-dark .nav-link:hover {
+  color: #DDEEEB !important;
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--main) !important;
+}
+
+/* Buttons */
+.btn-pink {
+  background-color: var(--main);
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.btn-pink:hover {
+  background-color: #244846;
+  color: #fff;
+}
+
+/* Tables */
+.table-pink thead {
+  background-color: var(--main);
+  color: #fff;
+}
+
+/* Cards */
+.card-soft {
+  border: 10px solid rgba(46, 89, 87, 0.3);  /* soft teal border */
+  border-radius: 1rem;
+  background-color: var(--accent);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-soft:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  border-color: rgba(46, 89, 87, 0.6); /* darker border on hover */
+}
+
+/* Form focus */
+.form-control:focus {
+  border-color: var(--main);
+  box-shadow: 0 0 0 0.2rem rgba(46, 89, 87, 0.25);
+}
+
+/* Footer */
+footer {
+  background-color: var(--main);
+  color: #fff;
+  margin-top: auto;
+}
+
+/* Table responsiveness */
+.table-hover tbody tr:hover {
+  background-color: #d6e4e3;
+}
+
+/* Small adjustments */
+.btn-primary {
+  background-color: var(--main);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #244846;
+}
